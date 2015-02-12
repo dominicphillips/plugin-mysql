@@ -25,7 +25,7 @@
             "name": "host",
             "description": "The Mysql hostname",
             "type": "string",
-            "default": "localhost",
+            "default": "127.0.0.1",
             "required": false
         },
         {

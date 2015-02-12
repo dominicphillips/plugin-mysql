@@ -62,6 +62,7 @@ fs.readFile("param.json", function (err, data)
 
   local client = mysql.createClient({
      port     = port,
+     host     = host,
      user     = user,
      password = pass
   })
