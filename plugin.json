@@ -1,0 +1,54 @@
+{
+    "description": "Mysql Plugin written in LUA",
+    "icon" : "icon.png",
+    "command": "boundary-meter index.lua",
+    "metrics" : [
+        "MYSQL_CONNECTIONS",
+        "MYSQL_ABORTED_CONNECTIONS",
+        "MYSQL_BYTES_IN",
+        "MYSQL_BYTES_OUT",
+        "MYSQL_SLOW_QUERIES",
+        "MYSQL_ROW_MODIFICATIONS",
+        "MYSQL_ROW_READS",
+        "MYSQL_TABLE_LOCKS",
+        "MYSQL_TABLE_LOCKS_WAIT",
+        "MYSQL_COMMITS",
+        "MYSQL_ROLLBACKS",
+        "MYSQL_QCACHE_MEMORY",
+        "MYSQL_QCACHE_HITS",
+        "MYSQL_QCACHE_PRUNES"
+    ],
+    "postExtract" : "",
+    "paramSchema": [
+        {
+            "title": "HOST",
+            "name": "host",
+            "description": "The Mysql hostname",
+            "type": "string",
+            "default": "localhost",
+            "required": false
+        },
+        {
+            "title" : "Port",
+            "name" : "port",
+            "description" : "The Mysql port",
+            "type" : "integer",
+            "default" : 3306
+        },
+        {
+            "title" : "User",
+            "name" : "user",
+            "description" : "The Mysql user",
+            "type" : "string",
+            "default" : ""
+        },
+        {
+            "title" : "Pass",
+            "name" : "pass",
+            "description" : "The Mysql password",
+            "type" : "string",
+            "default" : ""
+        },
+
+    ]
+}
